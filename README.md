@@ -70,6 +70,6 @@ Respuesta al hacer un segundo intento tras fallar | No
 > [Colorful.Console](https://github.com/tomakita/Colorful.Console)
 
 ## Nota
-Este contenido es con fines educativos para el aprendizaje y así demostrar los riesgos que existen al no utilizar las medidas correctas de seguridad. En ningún momento me hago responsable de su mal uso.
+Este proyecto ha sido realizado y publicado con fines educativos para el aprendizaje y así demostrar los riesgos que existen al no utilizar las medidas correctas de seguridad. En ningún momento me hago responsable de su mal uso.
 
 **Cualquier problema házmelo saber!.**
