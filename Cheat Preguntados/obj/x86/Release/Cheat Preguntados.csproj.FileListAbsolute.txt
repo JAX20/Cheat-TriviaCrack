@@ -1,0 +1,8 @@
+C:\Users\JAX\Documents\Visual Studio 2015\Projects\Cheat Preguntados\Cheat Preguntados\bin\x86\Release\FiddlerCore4.dll
+C:\Users\JAX\Documents\Visual Studio 2015\Projects\Cheat Preguntados\Cheat Preguntados\bin\x86\Release\Newtonsoft.Json.dll
+C:\Users\JAX\Documents\Visual Studio 2015\Projects\Cheat Preguntados\Cheat Preguntados\bin\x86\Release\Cheat Preguntados.exe.config
+C:\Users\JAX\Documents\Visual Studio 2015\Projects\Cheat Preguntados\Cheat Preguntados\bin\x86\Release\Cheat Preguntados.exe
+C:\Users\JAX\Documents\Visual Studio 2015\Projects\Cheat Preguntados\Cheat Preguntados\bin\x86\Release\Cheat Preguntados.pdb
+C:\Users\JAX\Documents\Visual Studio 2015\Projects\Cheat Preguntados\Cheat Preguntados\bin\x86\Release\Colorful.Console.dll
+C:\Users\JAX\Documents\Visual Studio 2015\Projects\Cheat Preguntados\Cheat Preguntados\obj\x86\Release\Cheat Preguntados.exe
+C:\Users\JAX\Documents\Visual Studio 2015\Projects\Cheat Preguntados\Cheat Preguntados\obj\x86\Release\Cheat Preguntados.pdb

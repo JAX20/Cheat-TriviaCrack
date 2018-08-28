@@ -1,0 +1,9 @@
+C:\Users\JAX\Documents\Visual Studio 2015\Projects\Cheat Preguntados\Cheat Preguntados\bin\x86\Debug\FiddlerCore4.dll
+C:\Users\JAX\Documents\Visual Studio 2015\Projects\Cheat Preguntados\Cheat Preguntados\bin\x86\Debug\Newtonsoft.Json.dll
+C:\Users\JAX\Documents\Visual Studio 2015\Projects\Cheat Preguntados\Cheat Preguntados\bin\x86\Debug\Cheat Preguntados.exe.config
+C:\Users\JAX\Documents\Visual Studio 2015\Projects\Cheat Preguntados\Cheat Preguntados\bin\x86\Debug\Cheat Preguntados.exe
+C:\Users\JAX\Documents\Visual Studio 2015\Projects\Cheat Preguntados\Cheat Preguntados\bin\x86\Debug\Cheat Preguntados.pdb
+C:\Users\JAX\Documents\Visual Studio 2015\Projects\Cheat Preguntados\Cheat Preguntados\bin\x86\Debug\Colorful.Console.dll
+C:\Users\JAX\Documents\Visual Studio 2015\Projects\Cheat Preguntados\Cheat Preguntados\obj\x86\Debug\Cheat Preguntados.csprojResolveAssemblyReference.cache
+C:\Users\JAX\Documents\Visual Studio 2015\Projects\Cheat Preguntados\Cheat Preguntados\obj\x86\Debug\Cheat Preguntados.exe
+C:\Users\JAX\Documents\Visual Studio 2015\Projects\Cheat Preguntados\Cheat Preguntados\obj\x86\Debug\Cheat Preguntados.pdb
