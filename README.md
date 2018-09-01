@@ -52,9 +52,9 @@ Partida en modo de juego clásico | Sí
 Partida en modo de juego duelo | No
 Desafiar a tu oponente cuando toca Corona | No
 Jugar por un personaje cuando toca Corona | Sí
-Respuestas de todas las categorías cuando toca Corona | No
+Respuestas de todas las categorías cuando toca Corona | ~~No~~ Sí
 Respuesta de una sola categoría cuando toca Corona | Sí
-Respuesta al hacer un segundo intento tras fallar | No
+Respuesta al hacer un segundo intento tras fallar | ~~No~~ Sí
 
 # Posibles problemas y su solución
 1. Si después de haber instalado el certificado usted recibe el mensaje "La conexión no es privada", cierre y abra nuevamente el navegador. Esto debería ser más que suficiente.
@@ -62,7 +62,8 @@ Respuesta al hacer un segundo intento tras fallar | No
 2. Si después de cerrar Cheat Preguntados usted recibe el mensaje "Sin conexión a Internet", desactive el servidor proxy manualmente en su equipo. Esto no debería de ocurrir. [Desactivar proxy](https://www.google.es/search?q=disable+proxy+settings)
 
 # Imagen del funcionamiento
-![Image](https://image.ibb.co/dt5FiU/asnwer_Correct_Trivia_Crack.png)
+![Image](https://image.ibb.co/eMtnPe/Trivia_Crack_Crown.png)
+![Image](https://image.ibb.co/m3tAcz/Trivia_Crack_Crown_And_Second_Chance_Question.png)
 
 # Librerías externas utilizadas
 > [FiddlerCore](https://www.telerik.com/fiddler/fiddlercore)
