@@ -1,7 +1,6 @@
 # Cheat para el juego Preguntados o más conocido como TriviaCrack
 
 [![Latest release](https://img.shields.io/github/release/JAX20/Cheat-TriviaCrack.svg)](https://github.com/JAX20/Cheat-TriviaCrack/releases)
-[![status:experimental](https://img.shields.io/badge/status-experimental-orange.svg)](https://github.com/JAX20/Cheat-TriviaCrack/releases)
 [![License GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-brightgreen.svg)](https://github.com/JAX20/Cheat-TriviaCrack/blob/master/LICENSE)
 
 Una aplicación simple para encontrar automáticamente la respuesta correcta en el juego Trivia Crack en Facebook (https://apps.facebook.com/triviacrack/).
