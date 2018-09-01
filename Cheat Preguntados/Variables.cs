@@ -4,8 +4,8 @@ namespace Cheat_Preguntados
 {
     public class Variables : Core
     {
-        public readonly string VersionApplication = "1.0";
-        public readonly bool VersionBeta = true;
+        public readonly string VersionApplication = "2.0";
+        public readonly bool VersionBeta = false;
         public readonly Color DefaultForegroundColor = Color.Salmon;
         public readonly Color DefaultBackgroundColor = Color.Black;
         public readonly int ConsoleWindowWidth = 109;

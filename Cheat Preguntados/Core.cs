@@ -12,26 +12,38 @@ namespace Cheat_Preguntados
         /*
          * Create instances of the class to use later
          */
-        public static OwnerProfile _ownerProfile = new OwnerProfile();
+        public static OwnerProfile _ownerProfile;
         public static GameInformation _gameInformation;
-        public static Variables _variables = new Variables();
-        public static HandlerFiddlerCore _handlerFiddlerCore = new HandlerFiddlerCore();
-        public static ConsoleOutput _consoleOutput = new ConsoleOutput();
+        public static GameInformationClassicMode _gameInformationClassicMode;
+        public static GameInformationClassicMode.SecondChanceQuestion _SecondChanceQuestion;
+        public static Variables _variables;
+        public static HandlerFiddlerCore _handlerFiddlerCore;
+        public static ConsoleOutput _consoleOutput;
 
         static void Main(string[] args)
         {
             try
-            {
+            {    /*  #Instances
+                 * Create an instance to the class.
+                 *   Create the instances that are in the constructor
+                 */
+                _ownerProfile = new OwnerProfile();
+                _gameInformation = new GameInformation();
+                _gameInformationClassicMode = new GameInformationClassicMode();
+                _SecondChanceQuestion = new GameInformationClassicMode.SecondChanceQuestion();
+                _variables = new Variables();
+                _handlerFiddlerCore = new HandlerFiddlerCore();
+                _consoleOutput = new ConsoleOutput();
+                /* #EndInstances*/
+
                 handler = new ConsoleEventDelegate(ConsoleEventCallback); //Instance for the method ConsoleEventCallback
                 SetConsoleCtrlHandler(handler, true); // Call to the API SetConsoleCtrlHandler
                 _consoleOutput.ConsoleWelcome();
-                new OwnerProfile(); // Create the instances that are in the constructor
-                new OpponentProfile(); // Create the instances that are in the constructor
-                _handlerFiddlerCore.Start();
+                _handlerFiddlerCore.Start(); // Start the proxy, install the certificate and the event for sessions capture
                 _consoleOutput.WriteLine("Inicie ahora sesión en FaceBook si aún no lo hizo y luego entre en alguna partida que sea modo Clásico. \nEsperando...", "Cheat");
                 _variables.ImStarted = true;
                 _consoleOutput.WriteLine("");
-                while (true) { System.Threading.Thread.Sleep(500); } // Prevent the application from closing
+                while (true) { System.Threading.Thread.Sleep(1800000); } // Prevent the application from closing
             }
             catch (Exception e)
             {

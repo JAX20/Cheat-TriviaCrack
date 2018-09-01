@@ -98,6 +98,7 @@
     <Compile Include="FiddlerCore\HandlerFiddlerCore.cs" />
     <Compile Include="Core.cs" />
     <Compile Include="Game\GameInformation.cs" />
+    <Compile Include="Game\GameInformationClassicMode.cs" />
     <Compile Include="Game\OpponentProfile.cs" />
     <Compile Include="Game\OwnerProfile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -51,18 +51,76 @@ namespace Cheat_Preguntados
 
         public void ShowInformationGame()
         {
-            int correct_answer = _gameInformation.spins_data.spins[0].questions[0].question.correct_answer;
+            /* Separator from games*/
             for (int n = 1; n <= _variables.ConsoleWindowWidth; n++)
             {
                 Write("-", "", Color.White, Color.Black);
             }
             WriteLine("");
-            WriteLine("█ Información de la partida - " + DateTime.Now, "", Color.Gold);
-            WriteLine("  Categoría: " + _gameInformation.spins_data.spins[0].questions[0].question.category, "", Color.Cyan);
-            WriteLine("  Pregunta: " + _gameInformation.spins_data.spins[0].questions[0].question.text, "", Color.Cyan);
-            WriteLine("  Respuestas: " + string.Join(", ", _gameInformation.spins_data.spins[0].questions[0].question.answers), "", Color.Cyan);
-            Write("  Respuesta correcta: ", "", Color.Cyan);
-            WriteLine(_gameInformation.spins_data.spins[0].questions[0].question.answers[correct_answer], "", Color.GreenYellow);
+            Write("█ Información de la partida - " + DateTime.Now, "", Color.Gold);
+
+            if (!_gameInformation.duelGameType) // Classic mode
+            {
+                WriteLine("  -  Modo de juego Clásico", "", Color.Gold);
+                if (_gameInformation.type == "CROWN") // category crown
+                {
+                    WriteLine("  Ha salido CORONA en la ruleta. Estas son las respuestas de cada categoría:", "", Color.White);
+                    WriteLine("");
+                    int num = 1;
+
+                    /* Shows all questions and ansers */
+                    foreach (var infor in Game.GameInformationClassicMode.CROWN.ListQuestionsFromTheCategories)
+                    {
+                        WriteLine($"  {num}. CATEGORÍA {infor.question.category}", "", Color.LightGoldenrodYellow);
+                        WriteLine("     Pregunta: " + infor.question.text, "", Color.Cyan);
+                        //WriteLine("     Respuestas: " + string.Join(", ", infor.question.answers), "", Color.Cyan);
+                        Write("     Respuesta correcta: ", "", Color.Cyan);
+                        WriteLine(infor.question.answers[infor.question.correct_answer], "", Color.GreenYellow);
+                        WriteLine("");
+
+                        if (_gameInformation.SecondChanceAvailable)
+                        {
+                            WriteLine("     [#] Pregunta de segunda oportunidad (en caso de haber fallado la anterior)", "", Color.White);
+                            //WriteLine("     Categoría: " + infor.second_chance_question.category, "", Color.Cyan);
+                            WriteLine("     Pregunta: " + infor.second_chance_question.text, "", Color.Cyan);
+                            //WriteLine("     Respuestas: " + string.Join(", ", infor.second_chance_question.answers), "", Color.Cyan);
+                            Write("     Respuesta correcta: ", "", Color.Cyan);
+                            WriteLine(infor.second_chance_question.answers[infor.second_chance_question.correct_answer], "", Color.GreenYellow);
+                            WriteLine("");
+                        }
+                        else
+                            WriteLine("  [#] Has agotado la pregunta de segunda oportunidad.", "", Color.White);
+                        num++;
+                    }
+                    Game.GameInformationClassicMode.CROWN.ListQuestionsFromTheCategories.Clear();
+                }
+                else // Type normal, you play one character only 
+                {
+                    WriteLine("  Categoría: " + _gameInformationClassicMode.category, "", Color.Cyan);
+                    WriteLine("  Pregunta: " + _gameInformationClassicMode.text, "", Color.Cyan);
+                    //WriteLine("  Respuestas: " + string.Join(", ", _gameInformationClassicMode.answers), "", Color.Cyan);
+                    Write("  Respuesta correcta: ", "", Color.Cyan);
+                    WriteLine(_gameInformationClassicMode.answers[_gameInformationClassicMode.correct_answer], "", Color.GreenYellow);
+                    WriteLine("");
+
+                    if (_gameInformation.SecondChanceAvailable)
+                    {
+                        WriteLine("  [#] Pregunta de segunda oportunidad (en caso de haber fallado la anterior)", "", Color.White);
+                        WriteLine("  Categoría: " + _SecondChanceQuestion.category, "", Color.Cyan);
+                        WriteLine("  Pregunta: " + _SecondChanceQuestion.text, "", Color.Cyan);
+                        //WriteLine("  Respuestas: " + string.Join(", ", _SecondChanceQuestion.answers), "", Color.Cyan);
+                        Write("  Respuesta correcta: ", "", Color.Cyan);
+                        WriteLine(_SecondChanceQuestion.answers[_SecondChanceQuestion.correct_answer], "", Color.GreenYellow);
+                        WriteLine("");
+                    }
+                    else
+                        WriteLine("  [#] Has agotado la pregunta de segunda oportunidad.", "", Color.White);
+                }
+            }
+            else if (_gameInformation.duelGameType) // Duel mode
+            {
+
+            }
         }
 
         public void Write(string body, string head = "", Color? foregroundColor = null, Color? backgroundColor = null)

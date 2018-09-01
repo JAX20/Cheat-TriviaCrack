@@ -1,5 +1,4 @@
-﻿
-namespace Cheat_Preguntados.Game
+﻿namespace Cheat_Preguntados.Game
 {
     public class OpponentProfile : Core
     {

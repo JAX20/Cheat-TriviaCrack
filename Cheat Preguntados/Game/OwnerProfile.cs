@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace Cheat_Preguntados.Game
+﻿namespace Cheat_Preguntados.Game
 {
     public class OwnerProfile : Core
     {
@@ -9,9 +7,6 @@ namespace Cheat_Preguntados.Game
         public Lives lives { get; set; }
         public LevelData level_data { get; set; }
         public Inbox inbox { get; set; }
-
-        public bool allow_og_posts { get; set; } // No idea
-
 
         public OwnerProfile()
         {
