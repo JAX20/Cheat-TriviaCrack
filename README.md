@@ -58,7 +58,7 @@ Respuesta al hacer un segundo intento tras fallar | ~~No~~ Sí
 # Posibles problemas y su solución
 1. Si después de haber instalado el certificado usted recibe el mensaje "La conexión no es privada", cierre y abra nuevamente el navegador. Esto debería ser más que suficiente.
 
-2. Si después de cerrar Cheat Preguntados usted recibe el mensaje "Sin conexión a Internet", desactive el servidor proxy manualmente en su equipo. Esto no debería de ocurrir. [Desactivar proxy](https://www.google.es/search?q=disable+proxy+settings)
+2. Si después de cerrar Cheat Preguntados usted recibe el mensaje "Sin conexión a Internet", desactive la configuración del proxy manualmente en su equipo. Esto no debería de ocurrir. [Desactivar proxy](https://www.google.es/search?q=disable+proxy+settings)
 
 # Imagen del funcionamiento
 ![Image](https://image.ibb.co/eMtnPe/Trivia_Crack_Crown.png)
